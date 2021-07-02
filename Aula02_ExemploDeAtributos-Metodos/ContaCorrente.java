@@ -8,7 +8,7 @@ public class ContaCorrente {
 
   //Métodos
 
-  public void cadastrarConta(int nConta, String nBanco, String nCliente) 
+  void cadastrarConta(int nConta, String nBanco, String nCliente) 
   {
     numeroConta = nConta;
     nomeBanco = nBanco;
