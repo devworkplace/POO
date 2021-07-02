@@ -3,14 +3,16 @@ public class Computador {
   String processador; // Intel, AMD
   String memoriaEmGB; // 4, 8
   int discoRigidoEmGB; // 500, 1200
-  boolean possuiCDRoom; // sim ou nao
+  boolean status; // sim ou nao
   
-  public void ligar(){
-
+  void ligar(){
+    status = true;
+    System.out.println("Computador ligado.");
   }
 
-  public void desligar(){
-
+  void desligar(){
+    status = false;
+    System.out.println("Computador desligado.");
   }
 
 }

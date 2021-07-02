@@ -1,26 +1,42 @@
 public class Aluno {
   int matricula;
   String nome;
-  float[] notas;
-  int frequencia;
+  float nota1;
+  float nota2;
+  int faltas;
   String email;
   String telefone;
+  boolean presente;
 
-  public void assistirAula(){
-
-  }
-
-  public void estudar(){
+  void estudar(){
 
   }
 
-  public void fazerProva(){
+  String analisarSituacao(float nota1, float nota2, int faltas){
+    float media = (nota1 + nota2)/2;
 
+    if ((media < 5) || (faltas > 12))
+      return "Reprovado";
+    else
+      return "Aprovado";
+    
   }
 
-  public void consultarNotas(){
-
+  boolean assistirAula(){
+    if (presente == true)
+      return true;
+    else
+      return false;
   }
+
+  boolean fazerProva(){
+    if (presente == true)
+      return true;
+    else
+      return false;
+  }
+
+
 
   
 }

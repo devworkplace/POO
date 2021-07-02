@@ -4,25 +4,22 @@ public class Caderno{
   int numero_de_folhas; // 50, 100, 300
   boolean possui_arame; // sim ou nao
   char tamanho; //P = pequeno, M = medio, G = grande
+  boolean aberto;
 
-  public void abrir(){
 
+  boolean fazerAnotacoes(){
+    if (aberto == true)
+      return true;
+    else
+      return false;
   }
 
-  public void fechar(){
-
+  void abrir(){
+    this.aberto = true;
   }
 
-  public void folhear(){
-
-  }
-
-  public void marcarPagina(){
-
-  }
-
-  public void fazerAnotacoes(){
-
+  void fechar(){
+    this.aberto = false;
   }
 
 }

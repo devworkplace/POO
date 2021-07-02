@@ -8,7 +8,7 @@ public class Teste {
 
     System.out.println("********************");
 
-    Automovel auto = new Automovel("Renaul", "Duster", "Branco", "Flex");
+    Automovel auto = new Automovel("Renault", "Duster", "Branco", "Flex");
     auto.ligar();
 
 
